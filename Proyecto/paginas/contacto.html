@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name ="author" content="Luis Verdugo Yébenes">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet"  href="../css/css.css" />
-	<link rel="stylesheet"  href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/css.css" />
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <title>CONTACTO</title>
 </head>  
 <body>
 	<div id="contenedor">
 		<header>	
-			<h1>marisa ramos - art</h1>
+			<h2>marisa ramos - art</h2>
 			<nav id="menu">
 				<ul>
 					<li><a href="../index.html"target="_blank">inicio</a></li>
@@ -22,28 +22,63 @@
 			</nav>
 		</header>
 
-		<main>
+		<main> 
+		<h2>contacto</h2>
 		<div id="mapa">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3083.442200228438!2d-3.224102448419894!3d39.39150072517065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd69af036cec6af9%3A0x3cb32e283081ecee!2sIES%20Juan%20Bosco!5e0!3m2!1ses!2ses!4v1581542139777!5m2!1ses!2ses">
 			</iframe>
 		</div>
-			<div id="formulario">
-				<form action="mailto:lvysazon@hotmail.com" method="post">
-					<label for="usuario">Usuario:</label>
-					<input type="text" name="usuario" id="usuario" size="10" 
-					placeholder="Escriba su nombre"  required="required"/>
-				<br/>
-					<label for="email">E-mail:</label>
-					<input type="email" id="email" name="control_email" required="required">
-				<br/>
-					<label for="control_telefono">Teléfono:</label>
-					<input type="tel" name="control_telefono" id="control_telefono" placeholder="Escriba 9 numeros o el prefijo"  pattern="(+[0-9]{1,3}?[0-9]{9}"/>
-				<br/>
-					<input type="submit" name="enviar" id="enviar"/>
-					<input type="reset" name="reset"/>
-				</form>
+		<div id="informacion">
+			<div id="telefono">
+				<img src="../multimedia/ico/llamar.png" alt="Teléfono">
+				<p>¡llámamé!</p>
+				<p>666666666</p>
 			</div>
+			<div id="ubicacion">
+				<img src="../multimedia/ico/ubi.png" alt="Ubicación">
+				<p>ubicación</p>
+				<p>Av. los Institutos, S/N, 13600 Alcázar de San Juan, Cdad. Real</p>
+			</div>
+			<div id="compartir">
+				<img src="../multimedia/ico/compartir.png" alt="compartir">
+				<p>comparte</p>
+				<p>666666666</p>
+			</div>
+		</div>
+		<h2>contacta conmigo</h2>
+		<div id="formulario">
+				<form action="mailto:lvysazon@hotmail.com" method="post">
+					<div id="form">		
+						<div id="form1">
+							<input type="text" name="usuario" id="usuario" size="10" placeholder="nombre"  required="required"/>
+						</div>
+						<div id="form1">
+							<input type="tel" name="control_telefono" id="control_telefono" placeholder="teléfono"/>
+						</div>	
+						<div id="form2">
+							<input type="email" id="email" name="control_email" placeholder="E-mail"required="required"/>
+						</div>
+						<div id="form2">
+							<textarea name="texto"  placeholder="Mensaje" required="required" minlength="20"></textarea>
+						</div>	
+						<div id="form2">
+							<input type="submit" name="enviar" id="enviar"/>
+						</div>
+					</div>
+				</form>
+		</div>
 	</div>
+
+	<div id="redes">
+		<a href="https://www.facebook.com/" target="_blank"> 
+		<img src="../multimedia/ico/faceboo.png" alt="facebook"></a>
+		<a href="https://www.instagram.com/">
+		<img src="../multimedia/ico/instagram.png" alt="instagram"></a>
+		<a href="https://www.youtube.com/">
+		<img src="../multimedia/ico/youtube.png" alt="youtube"></a>
+		<a href="https://www.whatsapp.com/">
+		<img src="../multimedia/ico/whatsapp.png" alt="whatsapp"></a>
+	</div>   
 	
 	<footer>
 		<address>Luis Verdugo &#169;2020</address>

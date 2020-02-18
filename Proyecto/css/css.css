@@ -1,7 +1,10 @@
 @font-face{
     font-family: "Fredericka";
     src: url("../fuentes/FrederickatheGreat-Regular.ttf");
-    
+}
+@font-face{
+    font-family: "Guy";
+    src: url("../fuentes/Guy.ttf");  
 }
 @font-face{
     font-family: "Abril";
@@ -15,65 +18,108 @@ html{
     background-image: url('../multimedia/13.jpg');
     background-size:100% 100%;
     width: 100%;
-    height:  100%;
+    height:100%;
 } 
 
 html, body{
     margin:  auto 0;
     padding: auto 0;
     font-family: "Fredericka";
-    font-size: 1rem;
-    
+    font-size: 1rem;  
 } 
-#contenedor{
-   
-  
-}
 main{
-    margin-top: 10%;
+    margin-top: 1%;
     position: static;
-    width:100%;
-    
+    width:100%;   
 }
-#formulario{
-    clear: top;
-    background-color: white;
-    position:flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 80%;
-    height: 100%;
-    position: static;
-    font-size:50px;
-}
-label{
-    text-align: center;
-  
-}
-input{
-    text-align:center;
+#form{
+    background-color:rgba(241, 228, 216, 0.4);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    border:4px solid black;
-    background-color: lightcoral;
+
+}
+#form1{
+    
+    margin: 1% auto;
+    position: relative;
+    width:30%;
+}
+#form2{
+    margin: 1% auto;
+    width: 80%;
+}
+
+#enviar:hover{
+    background-color: greenyellow;
+}
+
+#formulario{
+   font-family: "Acme";
+    margin: 2% auto;
+    width: 80%;
+    font-size:3em;
+}
+input, textarea{
+    text-transform: capitalize;
+    width: 100%;
+    border-radius: .5em;
+   
 }
 form{
     justify-content: center;
 }
 header{
     margin: 0 auto;
-    background-color: rgba(211,211,211,0.9);
+   /* background-color: rgba(136, 94, 60, 0.712);*/
     width: 100%;
-    position:fixed;
+    height: 50%;
+    /*position:fixed;*/
+    overflow: hidden;
     top:0% ;
 }
+article h2{
+    font-size: 3em;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 6em;
+    /*padding: 0;
+    top: 0%;*/
+    font-family: "Guy";
+}
+
 #mapa{
-    background-color: gray;
+    background-color: rgba(241, 228, 216, 0.4);
     margin: 0 auto;
     width:80%;
     height:45em;
-
     position: static;
 }
+#informacion{
+    background-color: rgba(241, 228, 216, 0.4);
+    margin: 1% auto;
+    width:80%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Guy";
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#compartir,#ubicacion,#telefono{
+    width: 32%;
+}
+#informacion p:nth-child(3n){
+    font-size: .8em;
+    color: rgb(49, 48, 48);
+
+}
+
 iframe{
     width:100%;
     height:100%;
@@ -91,16 +137,17 @@ footer{
 h1{
     text-transform: uppercase;
     text-align: center;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    font-size: 60px;
 }
 
 #banner_description{
-    font-family: "Abril";
-    font-size: 6em;
+    font-family: "Guy";
+    font-size: 10em;
     text-transform: uppercase;
     text-align: center;
-    left: center;
-    top: 24%;
+    margin: 10%;
+    position: static;
 }
 
 a{
@@ -110,8 +157,15 @@ a{
 }
 li{
     border:4px solid black;
-    padding: 1em 4em 1em 4em;
+    padding: .5em 2em .5em 2em;
     list-style: none;
+    font-size: 30px;
+    font-family: "Guy";
+    background-color:  rgba(136, 94, 60, 0.712);
+    border-radius: 1em;
+}
+li:hover{
+    background-color:  rgba(247, 114, 6, 0.712);
 }
 address{
     font-size: 4em;
@@ -126,11 +180,9 @@ ul{
 }
 section img{
     float: left;
-    width: 40%;
-    margin: 2%;
-    filter:alpha(opacity=100); 
-    opacity:1; 
-    
+    width: 36%;
+    margin: 3%; 
+    border-radius: 5%; 
 }
 article{
     font-size: 2.6em;
@@ -139,6 +191,69 @@ article{
     text-align: justify;
    
 }
-#sobre{
+#sobremi{
     background-color:rgba(247, 101, 101, 0.6);
 }
+#redes{
+    position: fixed;
+    display: flex;
+    flex-direction:column;
+    top: 40%;
+    padding: 1%;
+    background-color: rgba(136, 94, 60, 0.712);
+    border-radius: 1em;
+}
+#obr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(241, 228, 216, 0.4);
+}
+ .container {/*estas son las imgenes*/
+    margin: 1% auto;
+    position: relative;
+    width: 35%;
+  }
+  /*obras*/
+  .image {
+    width: 100%;
+    height:100%; /*height:auto;*/
+
+  }
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(228, 108, 10, 0.6);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  .text {
+    text-align: justify;
+    color: white;
+    font-size: 1.4em;
+    position: absolute;
+    overflow: hidden;
+    /*centrar textoi*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*-ms-transform: translate(-50%, -50%);*/
+  }
+
+  #video{
+    position: static;
+    width:100%;
+    margin:0 auto;
+  }
+  video{
+     width: 100%;
+  }
