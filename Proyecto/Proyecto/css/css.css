@@ -1,0 +1,228 @@
+@font-face{
+    font-family: "Fredericka";
+    src: url("../fuentes/FrederickatheGreat-Regular.ttf");
+}
+@font-face{
+    font-family: "Guy";
+    src: url("../fuentes/Guy.ttf");  
+}
+@font-face{
+    font-family: "Abril";
+    src: url("../fuentes/AbrilFatface-Regular.ttf");  
+}
+@font-face{
+    font-family: "Acme";
+    src: url("../fuentes/Acme-Regular.ttf");  
+}
+html{
+    background-image: url('../multimedia/13.jpg');
+    background-position: center center; /*centra img*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Guy";
+} 
+h1,h2,h3{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 6em;
+    font-family: "Guy";
+}
+h3{
+    font-size: 3em;
+}
+header{
+    margin: 1% auto;
+    /*width: 100%;*/
+    /*height: 50%;*/
+    /*overflow: hidden;*/
+    /*top:0% ;*/
+    /*background-color: rgba(136, 94, 60, 0.712);*/
+}
+footer{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.568);
+   /* position: static;*/
+    /* width: 100%;
+    height: 100px;*/
+  /*  bottom: 0;*/
+    /*margin: 0 auto;  */
+}
+address{
+    font-size: 3em;
+    text-align: center;
+}
+#video{
+    position: static;
+    width:100%;
+    margin:0 auto;
+}
+video{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+li{
+    border:6px solid rgb(1, 188, 245);
+    padding: .5em 2em .5em 2em;
+    list-style: none;
+    font-size: 2.4em;
+    background-color:  rgba(170, 206, 11, 0.712);
+    border-radius: 1em;
+}
+ul{
+    /*width: auto 100%;*/
+    justify-content: space-around;
+    display: flex;
+    flex-direction:row;
+}
+li:hover{
+    background-color:  rgba(247, 114, 6, 0.712);
+}
+a:hover{
+    color: rgb(215, 253, 0);
+}
+#redes{
+    position: fixed;
+    display: flex;
+    flex-direction:column;
+    top: 40%;
+    padding: 1%;
+    background-color: rgba(136, 94, 60, 0.712);
+    border-radius: 1em;
+}
+#frase{
+    font-size: 10em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 5%;
+    position: static;
+}
+/*OBRAS*/
+#subir{
+    position: fixed;
+    left: 94%;
+    bottom: 8%;
+}
+#obras{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(241, 228, 216, 0.4);
+}
+.caja {/*estas son las imgenes*/
+    margin: 1% auto;
+    position: relative;
+    width: 35%;
+}
+  /*obras*/
+.imagen {
+    width: 100%;
+    height:100%;
+}
+.ventana {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(228, 108, 10, 0.6);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+.caja:hover .ventana {
+    bottom: 0;
+    height: 100%;
+}
+.texto {
+    text-align: justify;
+    color: white;
+    font-size: 1.4em;
+    position: absolute;
+    overflow: hidden;
+    /*centrar texto*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#sobremi{
+    background-color:rgba(247, 101, 101, 0.6);
+}
+section img{
+    float: left;
+    width: 36%;
+    margin: 3%; 
+    border-radius: 5%; 
+}
+article{
+    font-size: 2.6em;
+    font-family: "Acme";
+    padding: 6%;
+    text-align: justify;  
+}
+#mapa{
+    margin: 0 auto;
+    width:80%;
+    height:45em;
+    position: static;
+}
+iframe{
+    width:100%;
+    height:100%;
+}
+#informacion{
+    background-color: rgba(241, 228, 216, 0.4);
+   margin: 1% auto;
+    width:80%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Guy";
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#compartir,#ubicacion,#telefono{
+    margin-top: 1%;
+    width: 32%;
+}
+#informacion p:nth-child(3n){
+    font-size: .8em;
+    color: rgb(49, 48, 48);
+
+}
+#form{
+    background-color:rgba(241, 228, 216, 0.4);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#form1{ 
+    margin: 1% auto;
+    position: relative;
+    width:30%;
+}
+#form2{
+    margin: 1% auto;
+    width: 80%;
+}
+#enviar:hover{
+    background-color: greenyellow;
+}
+#formulario{
+   font-family: "Acme";
+    margin: 2% auto;
+    width: 80%;
+    font-size:3em;
+}
+input, textarea{
+    text-transform: capitalize;
+    width: 100%;
+    border-radius: .5em;
+}
