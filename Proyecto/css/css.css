@@ -16,244 +16,735 @@
 }
 html{
     background-image: url('../multimedia/13.jpg');
-    background-size:100% 100%;
-    width: 100%;
-    height:100%;
+    background-position: center center; /*centra img*/
+    background-repeat: no-repeat;
+    background-size: cover; /*la img cubre toda la pantalla*/
+    background-attachment: fixed;
+    font-family: "Guy";
+    font-size: 12px;
 } 
-
-html, body{
-    margin:  auto 0;
-    padding: auto 0;
-    font-family: "Fredericka";
-    font-size: 1rem;  
-} 
-main{
-    margin-top: 1%;
-    position: static;
-    width:100%;   
-}
-#form{
-    background-color:rgba(241, 228, 216, 0.4);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-
-}
-#form1{
-    
-    margin: 1% auto;
-    position: relative;
-    width:30%;
-}
-#form2{
-    margin: 1% auto;
-    width: 80%;
-}
-
-#enviar:hover{
-    background-color: greenyellow;
-}
-
-#formulario{
-   font-family: "Acme";
-    margin: 2% auto;
-    width: 80%;
-    font-size:3em;
-}
-input, textarea{
-    text-transform: capitalize;
-    width: 100%;
-    border-radius: .5em;
-   
-}
-form{
-    justify-content: center;
-}
-header{
+h1,h2,h3{
+    text-transform: uppercase;
+    text-align: center;
     margin: 0 auto;
-   /* background-color: rgba(136, 94, 60, 0.712);*/
-    width: 100%;
-    height: 50%;
-    /*position:fixed;*/
-    overflow: hidden;
-    top:0% ;
+    font-size: 5em;
+    font-family: "Guy";
+    margin-top: 2%;
 }
-article h2{
+h3{
     font-size: 3em;
 }
-h2{
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 6em;
-    /*padding: 0;
-    top: 0%;*/
-    font-family: "Guy";
-}
-
-#mapa{
-    background-color: rgba(241, 228, 216, 0.4);
-    margin: 0 auto;
-    width:80%;
-    height:45em;
-    position: static;
-}
-#informacion{
-    background-color: rgba(241, 228, 216, 0.4);
+header{
     margin: 1% auto;
-    width:80%;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: "Guy";
-    font-size: 2em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-#compartir,#ubicacion,#telefono{
-    width: 32%;
-}
-#informacion p:nth-child(3n){
-    font-size: .8em;
-    color: rgb(49, 48, 48);
-
 }
 
-iframe{
-    width:100%;
-    height:100%;
-}
 footer{
-    margin: 0 auto;  
-    background-color: black;
-    position: static;
-    bottom: 0;
+    min-height: 2%;
     width: 100%;
-    height: 100px;
     color: white;
-}
-
-h1{
-    text-transform: uppercase;
-    text-align: center;
-    /*margin: 0 auto;*/
-    font-size: 60px;
-}
-
-#banner_description{
-    font-family: "Guy";
-    font-size: 10em;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10%;
-    position: static;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    text-transform: capitalize;
-}
-li{
-    border:4px solid black;
-    padding: .5em 2em .5em 2em;
-    list-style: none;
-    font-size: 30px;
-    font-family: "Guy";
-    background-color:  rgba(136, 94, 60, 0.712);
-    border-radius: 1em;
-}
-li:hover{
-    background-color:  rgba(247, 114, 6, 0.712);
+    background-color: rgba(0, 0, 0, 0.568);
 }
 address{
-    font-size: 4em;
-    font-family: "Abril";
+    font-size: 3em;
     text-align: center;
 }
-ul{
-    width: auto 100%;
-    justify-content: space-around;
-    display: flex;
-    flex-direction:row;
+#titulo{
+    margin: 0 auto;
+    top: 0;
 }
-section img{
-    float: left;
-    width: 36%;
-    margin: 3%; 
-    border-radius: 5%; 
-}
-article{
-    font-size: 2.6em;
-    font-family: "Acme";
-    padding: 5%;
-    text-align: justify;
-   
-}
-#sobremi{
-    background-color:rgba(247, 101, 101, 0.6);
-}
-#redes{
-    position: fixed;
-    display: flex;
-    flex-direction:column;
-    top: 40%;
-    padding: 1%;
-    background-color: rgba(136, 94, 60, 0.712);
-    border-radius: 1em;
-}
-#obr{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgba(241, 228, 216, 0.4);
-}
- .container {/*estas son las imgenes*/
-    margin: 1% auto;
-    position: relative;
-    width: 35%;
-  }
-  /*obras*/
-  .image {
-    width: 100%;
-    height:100%; /*height:auto;*/
+/*Ordenador*/
+@media screen and (min-width:1024px){ 
+    #logo{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo img{
+        margin-left: 3%;
+        position: static;
+        height: 20%;
+        min-width: 100px;
+        width: 8%;
+        border-radius: 5%; 
+    }
+    #video{
+        position: static;
+        width:100%;
+        margin:0 auto;
+    }
+    video{
+        height: 80rem;
+        min-height:400px;
+        width: 100%;    
+    }
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        text-transform: capitalize;
+    }
+    li{ 
+        box-shadow: 2px 2px 10px #666;
+        border:6px solid rgb(1, 188, 245);
+        padding: .5em 2em .5em 2em;
+        list-style: none;
+        font-size: 2.4em;
+        background-color:  rgba(170, 206, 11, 0.712);
+        border-radius: 1em;
+    }
+    ul{
+        justify-content: space-around;
+        display: flex;
+        flex-direction:row;
+    }
+    li:hover{
+        background-color:  rgba(247, 114, 6, 0.712);
+    }
+    a:hover{
+        color: rgb(215, 253, 0);
+    }
+    #redes{
+        position: fixed;
+        display: flex;
+        flex-direction:column;
+        top: 40%;
+        padding: 1%;
+        background-color: rgba(136, 94, 60, 0.712);
+        border-radius: 1em;
+    }
+    #frase{
+        font-size: 10em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 5%;
+        position: static;
+    }
+    h3{
+        font-size: 2em;
+    }
+    /*OBRAS*/
+    #subir{
+        position: fixed;
+        left: 94%;
+        bottom: 8%;
+    }
+    #obras{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgba(241, 228, 216, 0.4);
+    }
+    .caja {/*estas son las imgenes*/
+        margin: 1% auto;
+        position: relative;
+        width: 35%;
+    }
+    /*obras*/
+    .imagen {
+        width: 100%;
+        height:100%;
+    }
+    .ventana {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(228, 108, 10, 0.6);
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+    }
+    .caja:hover .ventana {
+        bottom: 0;
+        height: 100%;
+    }
+    .texto {
+        text-align: justify;
+        color: white;
+        font-size: 1.4em;
+        position: absolute;
+        overflow: hidden;
+        /*centrar texto*/
+        top: 40%;
+        left: 40%;
+        transform: translate(-35%, -35%);
+    }
+    /*sobre mi*/
+    #sobremi{
+        background-color:rgba(247, 101, 101, 0.6);
+    }
+    section img{
+        float: left;
+        width: 36%;
+        margin: 3%; 
+        border-radius: 5%; 
+    }
+    article{
+        font-size: 2.6em;
+        font-family: "Acme";
+        padding: 6%;
+        text-align: justify;  
+    }
+        /*contacto*/
+    #mapa{
+        margin: 0 auto;
+        width:80%;
+        height:45em;
+        position: static;
+    }
+    iframe{
+        width:100%;
+        height:100%;
+    }
+    #contacmi{
+        margin-top: 4%;
+    }
+    #informacion{
+        background-color: rgba(241, 228, 216, 0.4);
+        margin: 1% auto;
+        width:80%;/*width:80%;*/
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2em;
+        display: flex;
+        flex-direction: row; /*flex-direction: column;*/
+        flex-wrap: wrap;
+    }
+    #compartir,#ubicacion,#telefono{
+        margin-top: 1%;
+        width: 32%;
+    }
+    #informacion p:nth-child(3n){
+        font-size: .8em;
+        color: rgb(49, 48, 48);
+    }
+    #form{
+        /*background-color:rgba(241, 228, 216, 0.4);*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #form1,#form2{ 
+        margin: 1% auto;
+        position: relative;
+        width:30%;
+    }
+    #form3,#form4,#send{
+        margin: 1% auto;
+        width: 80%;
+    }
+    #enviar:hover{
+        background-color: greenyellow;
+    }
+    #formulario{
+        background-color: lightgrey;
+        font-family: "Acme";
+        margin: 2% auto;
+        width: 80%;
+        font-size:3em;
+    }
+    input, textarea{
+        text-transform: capitalize;
+        width: 100%;
+        border-radius: .5em;
+        /*padding-left: 2%;*/
+    }
 
-  }
-  .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: rgba(228, 108, 10, 0.6);
-    overflow: hidden;
-    width: 100%;
-    height:0;
-    transition: .5s ease;
-  }
-  
-  .container:hover .overlay {
-    bottom: 0;
-    height: 100%;
-  }
-  .text {
-    text-align: justify;
-    color: white;
-    font-size: 1.4em;
-    position: absolute;
-    overflow: hidden;
-    /*centrar textoi*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*-ms-transform: translate(-50%, -50%);*/
-  }
+    #enviar{
+        background-color: grey;
+    }
 
-  #video{
-    position: static;
-    width:100%;
-    margin:0 auto;
-  }
-  video{
-     width: 100%;
-  }
+}
+
+/*Tablets*/
+@media screen and (min-width:550px) and (max-width:1024px){
+    #logo{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo img{
+        margin-left: 3%;
+        position: static;
+        height: 20%;
+        min-width: 100px;
+        width: 8%;
+        border-radius: 5%; 
+    }
+    footer{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.568);
+    }
+    address{
+        font-size: 3em;
+        text-align: center;
+    }
+    #video{
+        position: static;
+        width:100%;
+        margin:0 auto;
+
+    }
+    video{
+        height: 60rem;
+        min-height:400px;
+        width: 100%;    
+    }
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        text-transform: capitalize;
+    }
+    li{ 
+        box-shadow: 2px 2px 10px #666;
+        border:4px solid rgb(1, 188, 245);
+        padding: .3em 1em .3em 1em;
+        list-style: none;
+        font-size: 2em;
+        background-color:  rgba(170, 206, 11, 0.712);
+        border-radius: 1em;
+    }
+    
+    ul{
+        padding: 0em;
+        text-align: justify;
+        justify-content: space-around;
+        display: flex;
+        flex-direction:row;
+    }
+    li:hover{
+        background-color:  rgba(247, 114, 6, 0.712);
+    }
+    a:hover{
+        color: rgb(215, 253, 0);
+    }
+    #redes{
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+        justify-content: space-around;
+        background-color: rgba(136, 94, 60, 0.712);
+        border-radius: 1em;
+    }
+    aside{
+        margin: 0 auto;
+    }
+    #frase{
+        font-size: 8em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 5%;
+        position: static;
+    }
+     /*OBRAS*/
+     #subir img{
+        display: block;
+        position: fixed;
+        margin:auto;
+        left: 50%;
+        bottom: 6%;
+        margin-left: -32px; 
+    }
+    #obras{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgba(241, 228, 216, 0.4);
+    }
+    .caja {/*estas son las imgenes*/
+        margin: 1% auto;
+        position: relative;
+        width: 45%;
+    }
+    /*obras*/
+    .imagen {
+        width: 100%;
+        height:100%;
+    }
+    .ventana {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(228, 108, 10, 0.6);
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+    }
+    .caja:hover .ventana {
+        bottom: 0;
+        height: 100%;
+    }
+    .texto {
+        text-align: justify;
+        color: white;
+        font-size: 1.4em;
+        position: absolute;
+        overflow: hidden;
+        /*centrar texto*/
+        top: 40%;
+        left: 40%;
+        transform: translate(-35%, -35%);
+    }
+    /*sobre mi*/
+    #sobremi{
+        background-color:rgba(247, 101, 101, 0.6);
+    }
+    section img{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        border-radius: 5%; 
+    }
+
+    article{
+        font-size: 1.7em;
+        font-family: "Acme";
+        padding: 6%;
+        text-align: justify;  
+    }
+     /*contacto*/
+    #mapa{
+        margin: 0 auto;
+        width:90%;
+        height:45em;
+        position: static;
+    }
+    iframe{
+        width:100%;
+        height:100%;
+    }
+    #contacmi{
+        margin-top: 4%;
+    }
+    #informacion{
+        background-color: rgba(241, 228, 216, 0.4);
+        margin: 1% auto;
+        width:90%;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2em;
+        display: flex;
+        flex-direction: row; /*flex-direction: column;*/
+        flex-wrap: wrap;
+    }
+    #compartir,#ubicacion,#telefono{
+        margin-top: 1%;
+        width: 32%;
+    }
+    #informacion p:nth-child(3n){
+        font-size: .8em;
+        color: rgb(49, 48, 48);
+    }
+    #form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #form1,#form2{ 
+        margin: 1% auto;
+        position: relative;
+        width:30%;
+    }
+    #form3,#form4,#send{
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+        width: 80%;
+
+    }
+    #enviar:hover{
+        background-color: greenyellow;
+    }
+    #formulario{
+    
+        background-color: lightgrey;
+        font-family: "Acme";
+        margin: 2% auto;
+        width: 90%;
+        font-size:2em;
+    }
+    input, textarea{
+        text-transform: capitalize;
+        width: 100%;
+        border-radius: .5em;
+        padding: 0%;/*padding texto dentro del formulario*/
+    }
+
+    #enviar{
+        width: 100%;   
+        background-color: grey;
+    }
+
+    
+}
+/*Móviles*/
+@media screen and (max-width:550px)and (min-width:300px){
+    #titulo{
+        font-size: 3em;
+    }
+    #logo{
+        margin: 0 auto; 
+    }
+    #logo img{
+        margin-left: 40%;
+        position: relative;
+        height: 20%;
+        min-width: 100px;
+        width: 8%;
+        border-radius: 5%; 
+    }
+    #contenedor{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #titulo{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        top: 0;
+    }
+
+    #video{
+        position: static;
+        width:100%;
+        margin:0 auto;
+    }
+    video{
+        width: 60%;
+    }
+    video{
+        
+        min-height:350px;
+        width: 100%;    
+    }
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        text-transform: capitalize;
+    }
+    li{ box-shadow: 2px 2px 10px #666;
+        width:100%;
+        margin:2% auto;
+        padding: 0;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+        border:0px solid rgb(1, 188, 245);
+        list-style: none;
+        font-size: 2.4em;
+        background-color:  rgba(170, 206, 11, 0.712);
+        border-radius: 1em;
+    }
+    ul{
+        justify-content: space-around;
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        flex-direction:column;
+    }
+    li:hover{
+        background-color:  rgba(247, 114, 6, 0.712);
+    }
+    a:hover{
+        color: rgb(215, 253, 0);
+    }
+    html, body {
+
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #redes{
+        margin-top: 2%;
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+        align-items: center;
+        background-color: rgba(237, 243, 185, 0.712);
+        border-radius: 1em;
+    }
+    #frase{
+        font-size: 6em;
+        text-transform: uppercase;
+        text-align: center;
+        color: orangered;
+        background-color: rgba(243, 217, 196, 0.294);;
+    }
+        /*OBRAS*/
+    #subir{
+        position: fixed;
+        left: 100%;
+        bottom: 8%;
+        margin-left: -70px;
+    }
+    #obras{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgba(241, 228, 216, 0.4);
+    }
+    .caja {/*estas son las imgenes*/
+        margin: 2% auto;
+        position: relative;
+        width: 100%;
+    }
+    /*obras*/
+    .imagen {
+        width: 100%;
+        height:100%;
+    }
+    .ventana {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(228, 108, 10, 0.6);
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+    }
+    .caja:hover .ventana {
+        bottom: 0;
+        height: 100%;
+    }
+    .texto {
+        text-align: justify;
+        color: white;
+        font-size: 1.4em;
+        position: absolute;
+        overflow: hidden;
+        /*centrar texto*/
+        top: 40%;
+        left: 40%;
+        transform: translate(-35%, -35%);
+    }
+    /*sobre mi*/
+    #sobremi{
+        background-color:rgba(247, 101, 101, 0.6);
+    }
+    section img{
+        min-height: 10px;
+        width: 100%;
+        border-radius: 5%; 
+    }
+
+    article{
+        font-size: 1.7em;
+        font-family: "Acme";
+        padding: 6%;
+        text-align: justify;  
+    }
+    /*contacto*/
+    #mapa{
+        margin: 0 auto;
+        padding: 0;
+        width:100%;
+        height:45em;
+        position: static;
+    }
+    iframe{
+        width:100%;
+        height:100%;
+    }
+    #contacmi{
+        margin-top: 4%;
+    }
+    #informacion img{
+        width:50%;
+        margin: 1% auto;
+        text-align: center;
+    }
+    #informacion{
+        background-color: rgba(241, 228, 216, 0.4);
+        margin-top: 3%;
+        padding: 0em;
+        width:100%;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2em;
+        display: flex;
+        flex-direction: column; 
+       
+    }
+    #compartir,#ubicacion,#telefono{
+        margin-top: 1%;
+        width: 40%;
+        margin:0  auto;
+    }
+    #informacion p:nth-child(3n){
+        font-size: .8em;
+        color: rgb(49, 48, 48);
+        text-align: center;
+        
+    }
+    #form{
+        /*background-color:rgba(241, 228, 216, 0.4);*/
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    #form1,#form2{ 
+        margin: 0 auto;
+        margin-bottom: 4% ;
+        position: relative;
+        width: 80%;
+        padding: 0;
+    }
+    #form3,#form4,#send{
+        margin-bottom: 4% ;
+        margin: 0% auto;
+        width: 80%;
+        padding: 0;
+    }
+    #enviar:hover{
+        background-color: greenyellow;
+    }
+    #formulario{
+        background-color: lightgrey;
+        font-family: "Acme";
+        margin: 2% auto;
+        width:100%;
+        padding: 0;
+        font-size:2em;
+    }
+    input, textarea{
+        text-transform: capitalize;
+        width: 100%;
+        border-radius: .5em;
+        padding: 2%;
+       
+    }
+    #enviar{
+        margin-top: 4% ;
+        background-color: grey;
+    }
+    h3{
+        font-size: 2em;
+    }
+    h2{
+        margin-top: 2%;
+        font-size: 3em;
+    }
+    main h2{
+        margin: 10%;
+        font-size: 3em;
+    }
+    address{
+        font-size: 2em;
+    }
+     
+}
+
+
+
+
